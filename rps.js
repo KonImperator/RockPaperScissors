@@ -72,13 +72,13 @@ const rpsGame = function () {
         console.log(`The computer chose....${computerChoice}`);
         compareChoices(userChoice, computerChoice);
         console.log(
-          `Current stats: Victories: ${victories} Losses: ${losses} Draws: ${draws}\nLet's play again!`
+          `Current stats: Victories: ${victories} Losses: ${losses} Draws: ${draws}\nLet's play again!\n`
         );
       } else if (userChoice === "reset") {
         reset();
-        console.log("Stats reset")
+        console.log("Stats reset\n")
       } else {
-        console.log("Invalid input!");
+        console.log("Invalid input!\n");
       }
       rpsGame();
     }
